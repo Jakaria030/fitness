@@ -31,6 +31,10 @@ body{
     margin: 0 auto;
 }
 
+.container-fluid{
+    background-color: var(--color-black);
+}
+
 .section-title{
     color: var(--color-white);
     font-size: 3rem;
@@ -226,7 +230,6 @@ body{
 
 /* habits section styles start */
 .habits-container{
-    background-color: var(--color-black);
     padding-top: 100px;
 }
 
@@ -267,7 +270,37 @@ body{
 } 
 /* habits section styles end */
 
+/* run section styles start */
+.run-container{
+    padding: 100px 0;
+}
 
+.run-row{
+    background: var(--color-dark);
+    border-radius: 18px;
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.run-content{
+    max-width: 500px;
+}
+
+.run-img{
+    max-width: 450px;
+}
+
+.run-img img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.run-btn{
+    margin-top: 20px;
+}
+/* run section styles end */
 
 
 
@@ -285,12 +318,13 @@ body{
 
     .section-title{
         font-size: 2rem;
+        margin-bottom: 15px;
     }
 
     .section-description{
         font-size: 0.8rem;
     }
-    
+
     .btn{
         font-size: .9rem;
         padding: 15px;
@@ -383,4 +417,16 @@ body{
         margin-bottom: 20px;
     }
     /* habits section styles end */
+
+    /* run section styles start */
+    .run-container{
+        padding: 25px 0;
+    }
+    .run-row{
+        flex-direction: column;
+    }
+    .run-btn{
+        width: 100%;
+    }
+    /* run section styles end */
 }
