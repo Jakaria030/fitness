@@ -147,5 +147,67 @@
     </section>
     <!-- training section end -->
     
+    <!-- BMI calculator section start -->
+    <section class="container-fluid">
+        <div class="container">
+            <div class="bmi-title-container">
+                <h1 class="section-title">BMI Calculator</h1>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bmi-chart-container">
+        <div class="container bmi-chart-content d-flex">
+            <div class="bmi-chart">
+                <h4 class="bmi-chart-title">BMI Calculator Chart</h4>
+
+                <table class="bmi-chart-table">
+                    <tr>
+                        <th>BMI</th>
+                        <th>Weight Status</th>
+                    </tr>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Healthy</td>
+                    </tr>
+                    <tr>
+                        <td>25.0 - 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td>30.0 - and Above</td>
+                        <td>Obese</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bmi-calculator">
+                <h4 class="bmi-chart-title">Calculate your BMI</h4>
+                <p class="section-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+
+                <form class="input-form">
+                    <div class="input-field d-grid">
+                        <input type="number" placeholder="Height/cm">
+                        <input type="number" placeholder="Weight/kg">
+                        <input type="number" placeholder="Age">
+                        <select>
+                            <option disabled selected>Sex</option>
+                        </select>
+                        <select class="last-child">
+                            <option disabled selected>Select an activity factor</option>
+                        </select>
+                    </div>
+                    <input class="btn calculate-btn" type="submit" value="Calculate">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- BMI calculator section end -->
+
+
 </body>
 </html>

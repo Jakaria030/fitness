@@ -300,6 +300,7 @@ body{
 }
 
 .run-btn{
+    width: 50%;
     margin-top: 20px;
 }
 /* run section styles end */
@@ -346,7 +347,7 @@ body{
     position: absolute;
     left: 20px;
     bottom: 30px;
-    color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .gallery-content-4{
@@ -383,8 +384,112 @@ body{
     width: 100%;
     height: 100%;
 }
+
+[class*="gallery-content-"]::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+}
+
+.gallery-content-1::before{
+    background: rgba(6, 255, 210, 0.5);
+}
+
+.gallery-content-2::before{
+    background: rgba(255, 0, 0, 0.3);
+}
+
+.gallery-content-3::before{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-content-4::before{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-content-5::before{
+    background: rgba(66, 255, 0, 0.3);
+}
+
+.gallery-content-6::before{
+    background: rgba(0, 71, 255, 0.3);
+}
 /* training section styles end */
 
+/* bmi section styles start */
+.bmi-title-container{
+    padding: 100px 0;
+}
+
+.bmi-chart-container{
+    background: var(--color-dark);
+}
+
+.bmi-chart-content{
+    padding: 50px 0;
+}
+
+.bmi-chart-title{
+    color: var(--color-white);
+    font-size: 1.75rem;
+    margin-bottom: 14px;
+}
+
+.bmi-chart{
+    width: 40%;
+}
+
+.bmi-chart-table{
+    margin-top: 50px;
+}
+
+.bmi-chart-table, .bmi-chart-table th, .bmi-chart-table td{
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 15px;
+    color: var(--color-light);
+    font-size: 0.875rem;
+}
+
+.bmi-chart-table th{
+    text-align: left;
+    color: var(--color-white);
+}
+
+.bmi-calculator{
+    width: 60%;
+}
+
+.input-form{
+    margin-top: 30px;
+}
+
+.input-field{
+    margin-bottom: 30px;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.input-field .last-child{
+    grid-column: 1 / -1;
+}
+
+.input-field input, select{
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: var(--color-light);
+}
+
+.calculate-btn{
+    width: 40%;
+}
+/* bmi section styles end */
 
 
 
@@ -543,5 +648,44 @@ body{
     .gallery-content-3, .gallery-content-6{
         display: none;
     }
+
+    [class*="gallery-content-"] h4{
+        font-size: 0.875rem;
+        top: auto;
+        bottom: 5%;
+        left: 5%;
+    }
+    /* training section styles end */
+
+    /* bmi calculator and chart styles start */
+    .bmi-title-container{
+        padding: 25px 0;
+    }
         
+    .bmi-chart-content{
+        flex-direction: column;
+        padding: 25px 0;
+    }
+    
+    .bmi-chart{
+        width: 100%;
+    }
+    
+    .bmi-chart-table{
+        margin-top: 25px;
+    }
+    
+    .bmi-chart-title{
+        font-size: 1.5rem;
+    }
+
+    .bmi-calculator{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .calculate-btn{
+        width: 50%;
+    }
+    /* bmi calculator and chart styles end */
 }
