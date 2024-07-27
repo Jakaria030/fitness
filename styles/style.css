@@ -491,7 +491,62 @@ body{
 }
 /* bmi section styles end */
 
+/* trainer section styles start */
+.trainer-container{
+    padding: 100px 0;
+}
 
+.trainer-title-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trainer-gallery{
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.trainer-gallery-content{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trainer-col{
+    max-height: 320px;
+    position: relative;
+}
+
+.trainer-col::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.trainer-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.trainer-name-designation{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: var(--color-white);
+}
+
+.trainer-name{
+    font-size: 1.25rem;
+}
+
+.trainer-designation{
+    font-size: 1rem;
+    color: var(--color-light);
+}
+/* trainer section styles end */
 
 
 /* responsive for moblie devices */
@@ -598,7 +653,7 @@ body{
 
     /* habits section styles start */
     .habits-container{
-        padding-top: 25px;
+        padding-top: 50px;
     }
         
     .habits-row{
@@ -659,7 +714,7 @@ body{
 
     /* bmi calculator and chart styles start */
     .bmi-title-container{
-        padding: 25px 0;
+        padding: 50px 0;
     }
         
     .bmi-chart-content{
@@ -688,4 +743,26 @@ body{
         width: 50%;
     }
     /* bmi calculator and chart styles end */
+
+    /* trainer gallery styles start */
+    .trainer-container{
+        padding: 50px 0;
+    }
+        
+    .trainer-gallery{
+        margin-top: 40px;
+    }
+    
+    .trainer-gallery-content{
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-name{
+        font-size: 1rem;
+    }
+    
+    .trainer-designation{
+        font-size: 0.875rem;
+    }
+    /* trainer gallery styles end */
 }
