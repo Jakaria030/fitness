@@ -164,6 +164,12 @@ body{
     background-color: transparent;
     border: 1px solid var(--color-white);
     margin-left: 14px;
+    transition: background 0.5s;
+}
+
+.btn-outline:hover{
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 .banner-image{
@@ -307,7 +313,7 @@ body{
 
 /* training section styles start */
 .training-title-container{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .training-gallery{
@@ -420,7 +426,7 @@ body{
 
 /* bmi section styles start */
 .bmi-title-container{
-    padding: 100px 0;
+    padding: 100px 0 50px;
 }
 
 .bmi-chart-container{
@@ -547,6 +553,80 @@ body{
     color: var(--color-light);
 }
 /* trainer section styles end */
+
+/* our pricing plan styles start */
+.pricing-title-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.price-row{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    padding-bottom: 100px;
+}
+
+.price-col{
+    background: var(--color-dark);
+    padding: 10% 15%;
+    border-radius: 20px;
+    color: var(--color-light);
+    text-align: center;
+    position: relative;
+}
+
+.price-col p{
+    font-size: 1.25rem;
+    color: var(--color-white);
+    font-weight: 800;
+}
+
+.price-col h3{
+    font-size: 3rem;
+    margin: 20px 0 40px;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.price-col span{
+    font-size: 1.25rem;
+}
+
+.price-col ul{
+    text-align: left;
+    margin: 20px 0;
+    color: var(--color-light);
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.price-col ul li{
+    margin: 15px 0;
+}
+
+.price-col ul li::before{
+    content: "\2022";
+    color: var(--color-primary);
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.add-to-cart-btn{
+    width: 70%;
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    transition: background 0.5s;
+
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%, -8%);
+}
+
+.add-to-cart-btn:hover{
+    background: var(--color-primary);
+}
+/* our pricing plan styles end */
 
 /* footer section styles start */
 .footer-container{
@@ -824,6 +904,12 @@ body{
         font-size: 0.875rem;
     }
     /* trainer gallery styles end */
+
+    /* pricing plan section styles start */
+    .price-row{
+        padding-bottom: 50px;
+    }
+    /* pricing plan section styles end */
 
     /* footer section styles start */
     .footer-row{
