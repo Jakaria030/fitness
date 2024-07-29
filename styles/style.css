@@ -26,14 +26,17 @@ body{
     line-height: 24px;
 }
 
+.container-fluid{
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: var(--color-black);
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
 }
 
-.container-fluid{
-    background-color: var(--color-black);
-}
 
 .section-title{
     color: var(--color-white);
@@ -139,7 +142,7 @@ body{
 
 .banner-title{
     color: var(--color-white);
-    font-size: 4.875rem;
+    font-size: 4.5rem;
     font-weight: 900;
     line-height: 120%;
     margin-bottom: 28px;
@@ -152,12 +155,13 @@ body{
 }
 
 .banner-description{
+    width: 80%;
     color: var(--color-light);
     font-size: 1.25rem;
 }
 
 .button-container{
-    margin-top: 28px;
+    margin-top: 40px;
 }
 
 .btn-outline{
@@ -194,7 +198,7 @@ body{
     position: absolute;
     align-items: center;
     left: -30%;
-    bottom: 15%;
+    bottom: 20%;
 }
 
 .sticker-2{
@@ -567,7 +571,7 @@ body{
 }
 
 .price-row{
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     grid-gap: 25px;
     padding-bottom: 100px;
 }
@@ -642,7 +646,7 @@ body{
 
 .footer-row{
     padding-top: 50px;
-    gap: 100px;
+    gap: 50px;
 }
 
 .foooter-logo{
@@ -662,6 +666,10 @@ body{
     justify-content: space-between;
 }
 
+.footer-col-25{
+    gap: 25px;
+}
+
 .footer-col-25 h2{
     color: var(--color-white);
     font-size: 2rem;
@@ -676,7 +684,7 @@ body{
 .footer-menu li a{
     text-decoration: none;
     color: var(--color-light);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     display: block;
     line-height: 1.2;
     padding: 10px 0;
@@ -696,6 +704,232 @@ body{
 /* footer section styles end */
 
 
+/* responsive for medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px){
+    /* common styles start */
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .section-title{
+        font-size: 2.5rem;
+    }
+
+    .section-description{
+        font-size: 0.875rem;
+    }
+    /* common styles end */
+
+    /* header styles start */
+    /* navigation bar styles start */    
+    .nav-item{
+        margin-right: 10px;
+        padding: 6px 10px;
+    }
+    
+    /* banner section styles start*/
+    .banner-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .banner-content{
+        width: 100%;
+        margin-top: 50px;
+        padding: 0 30px;
+    }
+    
+    .banner-description{
+        width: 100%;
+    }
+
+    .banner-image{
+        margin: 0 auto;
+    }
+
+    .sticker-1{
+        left: -5%;
+        bottom: 25%;
+    }
+    
+    .sticker-2{
+        right: -5%;
+        top: 20%;
+    }
+
+    .sticker-1, .sticker-2{
+        padding: 8px 15px;
+    }
+
+    .sticker-1 > div h3{
+        font-size: 1.5rem;
+    }
+    
+    .sticker-1 > div p{
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    
+    .sticker-2 h3{
+        font-size: 1.5rem;
+    }
+    
+    .sticker-2 p{
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    /* banner section styles end*/
+    /* header styles end */
+
+    /* habits section styles start */
+    .habits-container{
+        padding-top: 50px;
+    }
+    
+    .habits-title-container{
+        max-width: 80%;
+    }
+    
+    .habits-row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+    }
+    
+    .habits-col{
+        margin: 25px auto;
+    }
+
+    .habits-col p{
+        font-size: 0.875rem;
+    }
+    /* habits section styles end */
+
+    /* run section styles start */
+    .run-container{
+        padding: 25px 0;
+    }
+    
+    .run-content{
+        max-width: 450px;
+    }
+
+    .section-md-title{
+        font-size: 2rem;
+    }
+
+    .run-btn{
+        width: 90%;
+    }
+    /* run section styles end */
+
+    /* training section styles start */
+    .training-title-container{
+        max-width: 80%;
+        padding: 50px 0;
+    }
+
+    [class*="gallery-content-"] h4{
+        font-size: 0.875rem;
+    }
+    /* training section styles end */
+
+    /* bmi calculator and chart styles start */
+    .bmi-title-container{
+        max-width: 80%;
+        padding: 50px 0;
+    }
+        
+    .bmi-chart-content{
+        flex-direction: column;
+        padding: 25px 0;
+    }
+    
+    .bmi-chart{
+        width: 100%;
+    }
+    
+    .bmi-chart-table{
+        margin-top: 25px;
+    }
+    
+    .bmi-chart-title{
+        font-size: 1.5rem;
+    }
+
+    .bmi-calculator{
+        width: 100%;
+        margin-top: 50px;
+    }
+    /* bmi calculator and chart styles end */
+
+    /* trainer gallery styles start */
+    .trainer-container{
+        padding: 50px 0;
+    }
+
+    .trainer-title-container{
+        max-width: 80%;
+    }
+
+    .trainer-gallery{
+        margin-top: 40px;
+    }
+
+    .trainer-name{
+        font-size: 1rem;
+    }
+    
+    .trainer-designation{
+        font-size: 0.875rem;
+    }
+    /* trainer gallery styles end */
+
+    /* pricing plan section styles start */
+    .pricing-title-container{
+        max-width: 80%;
+    }
+    
+    .price-row{
+        padding-bottom: 50px;
+    }
+    /* pricing plan section styles end */
+
+    /* footer section styles start */
+    .footer-row{
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .foooter-logo{
+        font-size: 4rem;
+    }
+
+    .footer-description{
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .footer-col-50{
+        width: 100%;
+        justify-content: flex-start;
+        gap: 100px;
+    }
+    
+    .footer-col-25 h2{
+        font-size: 1.5rem;
+    }
+
+    .footer-menu li a{
+        font-size: 1.125rem;
+    }
+
+    .copyright-description{
+        font-size: 1.125rem;
+    }
+    /* footer section styles end */
+}
 
 /* responsive for small devices */
 @media screen and (max-width: 576px){
@@ -722,20 +956,21 @@ body{
     /* common styles end */
 
     /* header styles start */
-    /* navigation bar styles */
+    /* navigation bar styles start */
     .navbar{
         padding-top: 50px;
     }
-
+    
     .nav{
         display: none;
     }
-
+    
     .ham-burger{
         display: block;
     }
+    /* navigation bar styles end */
 
-    /* banner section styles */
+    /* banner section styles start*/
     .banner-container{
         flex-direction: column;
         align-items: flex-start;
@@ -749,54 +984,56 @@ body{
     .banner-title-container{
         max-width: 285px;
     }
-
+    
     .banner-title{
         font-size: 2.5rem;
     }
     
     .banner-description{
+        width: 100%;
         font-size: 1.125rem;
     }
-
+    
     .banner-image{
         margin: 0 auto;
     }
-
+    
     .btn-outline{
         margin-left: 5px;
     }
-
+    
     .sticker-1, .sticker-2{
         padding: 10px 15px;
         gap: 5px;
     }
-
+    
     .sticker-1{
         left: 5%;
         bottom: 40%;
     }
-
+    
     .sticker-2{
         right: 0%;
         top: 15%;
     }
-
+    
     .sticker-1 > div h3{
         font-size: 1.125rem;
     }
-
+    
     .sticker-1 > div p{
         font-size: 0.8125rem;
     }
-
+    
     .sticker-2 h3{
         font-size: 1.8rem;
     }
-
+    
     .sticker-2 p{
         font-size: 0.7rem;
         margin-top: 10px;
     }
+    /* banner section styles end*/
     /* header styles end */
 
     /* habits section styles start */
@@ -933,6 +1170,7 @@ body{
     
     .price-row{
         padding-bottom: 50px;
+        grid-template-columns: 1fr;
     }
     /* pricing plan section styles end */
 
@@ -947,6 +1185,7 @@ body{
     }
 
     .footer-description{
+        width: 80%;
         font-size: 1rem;
     }
 
